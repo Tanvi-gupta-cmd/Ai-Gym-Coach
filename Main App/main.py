@@ -339,15 +339,6 @@ def main():
             key="exercise-analysis",
             mode=WebRtcMode.SENDRECV,
             video_processor_factory=VideoProcessorClass,
-            rtc_configuration={
-                "iceServers": [
-                    {
-                        "urls": [
-                            "stun:stun.cloudflare.com:3478"
-                        ]
-                    }
-                ]
-            },
             media_stream_constraints={
                 "video": True,
                 "audio": False
